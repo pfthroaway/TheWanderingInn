@@ -9,7 +9,7 @@ namespace TheWanderingInnConsole
         /// <param name="skillName">The <see cref="Skill"/>'s name.</param>
         /// <param name="effectType">The <see cref="Skill"/>'s effect type.</param>
         /// <param name="learn">Is the <see cref="Character"/> learning the <see cref="Skill"/>?</param>
-        private static void ObtainSkill(Character character, string skillName, EffectType effectType, bool learn = false) => Console.WriteLine(character.ObtainSkill(GenerateSkill(skillName, effectType)));
+        private static void ObtainSkill(Character character, string skillName, EffectType effectType, bool learn = false) => Console.WriteLine(character.ObtainSkill(GenerateSkill(skillName, effectType), learn));
 
         /// <summary>Generates a <see cref="Skill"/> with a basic description./// </summary>
         /// <param name="name">The <see cref="Skill"/>'s name.</param>
